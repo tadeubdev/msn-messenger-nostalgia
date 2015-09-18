@@ -1,6 +1,5 @@
 #Sdds MSN
-##Saudades MSN Messenger
-------
+###Saudades MSN Messenger
 
 Se você como eu sente saudades do MSN Messenger, este pequeno aplicativo é para você.
 
@@ -8,8 +7,5 @@ Se você como eu sente saudades do MSN Messenger, este pequeno aplicativo é par
 
 <br/>
 
-----------
 
 ##AINDA EM PROCESSO DE CRIAÇÃO
-
----------
