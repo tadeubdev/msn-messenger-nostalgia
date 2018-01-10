@@ -12,24 +12,23 @@ body
 		width: 400px
 		margin: 50px auto
 
-	&__user
-		&-image
-			width: 110px
-			height: 110px
-			margin: 0 auto
+	&__user-image
+		width: 110px
+		height: 110px
+		margin: 0 auto
 
-			background-color: #FFF
-			background-size: cover
-			background-position: center
-			border-radius: 3px
-			border: 6px solid #f84
+		background-color: #FFF
+		background-size: cover
+		background-position: center
+		border-radius: 3px
+		border: 6px solid #f84
 
-		&-welcome
-			margin: 5px 0 20px 0
-			font-size: 16px
-			font-weight: bolder
-			text-transform: uppercase
-			text-align: center
+	&__user-welcome
+		margin: 5px 0 20px 0
+		font-size: 16px
+		font-weight: bolder
+		text-transform: uppercase
+		text-align: center
 
 	&__form
 		margin: 30px 0
@@ -39,13 +38,19 @@ body
 		font-size: 13px
 
 		.welcome__form-inputs
-			padding: 10px			
+			padding: 10px
+			label
+				font-weight: bold
+				color: #888
+
 			input
 				width: 100%
-				padding: 3px
+				height: 35px
+				line-height: 35px
+				padding: 0 10px
 				border: 1px solid rgba( black, .4 )
 				margin: 5px 0
-				border-radius: 3px
+				border-radius: 2px
 
 		&__signin
 			padding: 10px
