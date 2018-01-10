@@ -1,14 +1,19 @@
-'use strict';
+'use strict'
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
- 
-gulp.task('sass', function () {
-    return gulp.src('./assets/sass/*.sass')
+const gulp = require('gulp')
+const sass = require('gulp-sass')
+const livereload = require('gulp-livereload')
+
+const pathToFiles = ['./assets/sass/*.sass', './assets/sass/**/*.sass']
+
+gulp.task('sass', () => {
+    return gulp.src(pathToFiles)
         .pipe(sass({ outputStyle: 'compact' }).on('error', sass.logError))
         .pipe(gulp.dest('./public/css'))
-});
+        .pipe(livereload({ start: true }))
+})
  
-gulp.task('sass:watch', function () {
-    gulp.watch('./assets/sass/*.sass', ['sass']);
-});
+gulp.task('sass:watch', () => {
+    livereload.listen()
+    gulp.watch(pathToFiles, ['sass'])
+})

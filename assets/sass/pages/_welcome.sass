@@ -12,31 +12,33 @@ body
 		width: 300px
 		margin: 30px auto
 
-	&-user-image
-		width: 100px
-		height: 100px
-		margin: 0 auto
+	&__user
 
-		background-color: #FFF
-		background-size: cover
-		background-position: center
-		border: 2px solid rgba( black, .4 )
-		border-radius: 6px
+		&-image
+			width: 100px
+			height: 100px
+			margin: 0 auto
 
-		&:before
-			content: ' '
-			display: block
-			width: 116px
-			height: 116px
-			margin: -10px 0 0 -10px
-			background-image: url('../image/profile-default.png')
-			background-repeat: no-repeat
+			background-color: #FFF
+			background-size: cover
 			background-position: center
+			border: 2px solid rgba( black, .4 )
+			border-radius: 6px
 
-	&-user-welcome
-		margin: 10px 0
-		font-size: 17px
-		text-align: center
+			&:before
+				content: ' '
+				display: block
+				width: 116px
+				height: 116px
+				margin: -10px 0 0 -10px
+				background-image: url('../image/profile-default.png')
+				background-repeat: no-repeat
+				background-position: center
+
+		&-welcome
+			margin: 10px 0
+			font-size: 17px
+			text-align: center
 
 	&-form
 		margin: 30px 0
