@@ -1,79 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<meta charset="UTF-8">
 	<title> Sdds MSN </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" type="text/css" href="www/css/theme.css">
+	<link rel="stylesheet" type="text/css" href="public/css/app.css">
 </head>
-
 <body>
 
 	<div id="welcome" class="container">
 
 		<div class="content">
 
-			<div id="welcome-user-image" style="background-image:url('www/image/users/tadeu.jpg');"></div>
+			<div id="welcome__user-image" style="background-image:url('public/image/user.png');"></div>
 
-			<div id="welcome-user-welcome">
+			<div id="welcome__user-welcome"> Bem Vindo! </div>
 
-				Bem Vindo de volta!
+			<form id="welcome__form">
 
-			</div>
-
-			<form id="welcome-form">
-
-				<div id="welcome-form-inputs">
-
-					<input type="email" placeholder="seu.email@email.com" disabled="disabled">
-
+				<div id="welcome__form-inputs">
+					<input type="email" placeholder="jhon.doe@email.com" disabled="disabled">
 					<input type="password" placeholder="***********" disabled="disabled">
-
 				</div>
 
-				<div id="welcome-form-signin">
+				<div id="welcome__form__signin">
+					<div class="welcome__form__signin-group">
+						Entrar como:
+						<div id="welcome__form__signin-icon"></div>
+					</div>
 
-					Entrar como:
-
-					<div id="welcome-form-signin-icon"></div>
-
-					Aparecer:
-
-					<span id="welcome-form-signin-status">
-						<span> Ausente </span>
-					<span> Indisponível </span>
-					<span> Online </span>
-					<span> Offline </span>
-					</span>
-
+					<div class="welcome__form__signin-group">
+						Aparecer:
+						<div id="welcome__form__signin-status">
+							<span> Ausente </span>
+							<span> Indisponível </span>
+							<span> Online </span>
+							<span> Offline </span>
+						</div>
+					</div>
 				</div>
 
-				<div id="welcome-form-facebook"></div>
-
+				<div id="welcome__form-facebook"></div>
 			</form>
 
 			<div id="welcome-about">
-
 				<h4> LEIA-ME </h4>
-
+				<p> Este site serve apenas para matar a saudade do tempo do <strong>MSN Messenger</strong>, portanto <strong>não</strong>					se trata de nenhum aplicativo feito pelo grupo <a href="http://msn.com" target="_blank">MSN</a>. </p>
 				<p>
-					Este site serve apenas para matar a saudade do tempo do <strong>MSN Messenger</strong>, portanto <strong>não</strong>					se trata de nenhum aplicativo feito pelo grupo <a href="http://msn.com" target="_blank">MSN</a>.
+					Criado por <a href="http://fb.com/tadeubarbos" target="_blank">Tadeu Barbosa</a>, com todo o seu código fonte disponibilizado em <a href="http://github.com/tadeubarbosa/sdds-msn">github.com/sdds-msn</a>.
 				</p>
-
-				<p>
-					Criado por <a href="http://fb.com/tadeubarbos" target="_blank">Tadeu Barbosa</a>, com todo o seu código fonte disponibilizado
-					em <a href="http://github.com/tadeubarbosa/sdds-msn">github.com/sdds-msn</a>, evitando assim qualquer suspeita de mal
-					uso de seus dados. ;)
-				</p>
-
 			</div>
 
 		</div>
-
 	</div>
 
 </body>
-
 </html>
