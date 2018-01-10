@@ -1,0 +1,88 @@
+body
+	background-repeat: no-repeat, repeat-x
+	background-size: 100%, 100%
+	background-image: url('../image/background-top-blue.jpg'), linear-gradient(to bottom, transparent 60%, #d2ebf5)
+
+#welcome
+	width: 100%
+	padding: 20px
+	color: $color
+
+	@include device-large
+		width: 300px
+		margin: 30px auto
+
+	&-user-image
+		width: 100px
+		height: 100px
+		margin: 0 auto
+
+		background-color: #FFF
+		background-size: cover
+		background-position: center
+		border: 2px solid rgba( black, .4 )
+		border-radius: 6px
+
+		&:before
+			content: ' '
+			display: block
+			width: 116px
+			height: 116px
+			margin: -10px 0 0 -10px
+			background-image: url('../image/profile-default.png')
+			background-repeat: no-repeat
+			background-position: center
+
+	&-user-welcome
+		margin: 10px 0
+		font-size: 17px
+		text-align: center
+
+	&-form
+		margin: 30px 0
+		font-size: 13px
+
+	&-form-inputs
+
+		input
+			width: 100%
+			padding: 3px
+			border: 1px solid rgba( black, .4 )
+			margin: 5px 0
+			border-radius: 3px
+
+	&-form-signin-icon
+		display: inline-block
+		width: 10px
+		height: 10px
+		margin: 0 5px
+		border-radius: 2px
+		background: #aec8e9
+
+	&-form-signin-status
+		span
+			display: none
+			cursor: pointer
+
+		span:first-child
+			display:inline-block
+
+	&-form-facebook
+		width: 150px
+		height: 30px
+		margin: 10px auto
+		cursor: pointer
+		background-image: url('../image/facebook.png')
+		background-size: contain
+		background-position: center
+		background-repeat: no-repeat
+
+	&-about
+		text-align: center
+
+		h4
+			margin:0 
+
+		p
+			margin-top: 0
+			font-size: 12px
