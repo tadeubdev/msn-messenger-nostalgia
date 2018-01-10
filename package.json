@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tadeubarbosa/sdds-msn/issues"
   },
-  "homepage": "https://github.com/tadeubarbosa/sdds-msn#readme"
+  "homepage": "https://github.com/tadeubarbosa/sdds-msn#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
