@@ -1,9 +1,8 @@
-# SDDs MSN
+# SDDMSN
+### Saudade MSN Messenger
 
-### Saudades MSN Messenger
+Se você, assim como eu, sente saudade do MSN Messenger este pequeno aplicativo foi feito para você!
 
-Se você, assim como eu, sente saudades do MSN Messenger este pequeno aplicativo é para você!
+** Isto **não** se trata de nenhum aplicativo criado pelo grupo <a href="http://msn.com" target="_blank">MSN</a>, mas sim de um antigo usuário que sente saudade do __MSN Messenger__.
 
-### Isto não se trata de nenhum aplicativo criado pelo grupo <a href="http://msn.com" target="_blank">MSN</a> e sim de um antigo usuário que gostava do aplicativo.
-
-## AINDA EM PROCESSO DE CRIAÇÃO
+Ainda em processo de criação.
