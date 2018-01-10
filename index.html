@@ -15,29 +15,28 @@
 
 			<div id="welcome__user-image" style="background-image:url('public/image/user.png');"></div>
 
-			<div id="welcome__user-welcome"> BEM VINDO! </div>
+			<div id="welcome__user-welcome"> welcome! </div>
 
 			<form id="welcome__form">
 
-				<div id="welcome__form-inputs">
-					<input type="email" placeholder="jhon.doe@email.com" disabled="disabled">
-					<input type="password" placeholder="***********" disabled="disabled">
+				<div class="welcome__form-inputs">
+					<label for="email">Email:</label>
+					<input type="email" name="email" placeholder="jhon.doe@email.com" disabled="disabled">
+				</div>
+
+				<div class="welcome__form-inputs">
+					<label for="password">Password:</label>
+					<input type="password" name="password" placeholder="***********" disabled="disabled">
 				</div>
 
 				<div id="welcome__form__signin">
-					<div class="welcome__form__signin-group">
-						Entrar como:
-						<div id="welcome__form__signin-icon"></div>
-					</div>
-
-					<div class="welcome__form__signin-group">
-						Aparecer:
-						<div id="welcome__form__signin-status">
-							<span> Ausente </span>
-							<span> Indisponível </span>
-							<span> Online </span>
-							<span> Offline </span>
-						</div>
+					<span>Aparecer:</span>
+					<span id="welcome__form__signin-status">Online</span>
+					<div id="welcome__form__signin-options">
+						<span> Ausente </span>
+						<span> Indisponível </span>
+						<span> Online </span>
+						<span> Offline </span>
 					</div>
 				</div>
 
