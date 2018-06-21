@@ -1,0 +1,83 @@
+#welcome
+	width: 100%
+	padding: 20px
+	color: $primary-color
+
+	@include device-large
+		width: 400px
+		margin: 50px auto
+
+	&__container
+		margin: 20px 0
+		padding: 26px 10px
+		border: 1px solid #CCC
+		border-radius: 2px
+		font-size: 13px
+
+		&__user-image
+			width: 110px
+			height: 110px
+			margin: 0 auto
+			background-color: #FFF
+			background-size: cover
+			background-position: center
+			border-radius: 4px
+			border: 6px solid $default
+
+		&__user-welcome
+			margin: 5px 0 20px 0
+			font-size: 16px
+			text-align: center
+
+		.welcome__container-inputs
+			padding: 6px
+
+			label
+				font-weight: bold
+				color: #888
+
+			input
+				width: 100%
+				height: 30px
+				line-height: 30px
+				padding: 0 10px
+				border: 1px solid rgba( black, .4 )
+				margin: 5px 0
+				border-radius: 2px
+
+		&__signin
+			padding: 10px
+			
+			&-status
+				margin: 0 5px
+				font-weight: bolder
+				text-transform: uppercase
+
+			&-options
+				background: red
+				span
+					display: none
+					cursor: pointer
+
+				span:first-child
+					display:inline-block
+
+		&-facebook
+			width: 150px
+			height: 30px
+			margin: 10px auto
+			cursor: pointer
+			background-image: url('../image/facebook.png')
+			background-size: contain
+			background-position: center
+			background-repeat: no-repeat
+
+	&-about
+		text-align: center
+
+		h4
+			margin: 0
+
+		p
+			margin-top: 0
+			font-size: 12px
