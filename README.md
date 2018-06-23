@@ -1,8 +1,21 @@
-# SDDMSN
-### Saudade MSN Messenger
+## MSN Messenger Nostalgia
+### An unofficial project to old MSN &copy; Messenger user.
 
-Se você, assim como eu, sente saudade do MSN Messenger este pequeno aplicativo foi feito para você!
+If you has nostalgia of MSN Messenger like me, this small application was made for you.
 
-** Isto **não** se trata de nenhum aplicativo criado pelo grupo <a href="http://msn.com" target="_blank">MSN</a>, mas sim de um antigo usuário que sente saudade do __MSN Messenger__.
+<br>
 
-Ainda em processo de criação.
+> ATTENTION! <br>
+> This one is not an official application by <a href="https://msn.com" target="_blank">MSN &copy;</a>. <br>
+> This is a simple and uncommercial application for old users.
+
+<br>
+<br>
+
+---
+
+### UNDER CONSTRUCTION
+
+You can made anything for this project? Help us!
+
+Clone and send a `pull request`!  :wink: 

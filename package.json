@@ -1,27 +1,10 @@
 {
-  "name": "sddsmsn",
+  "name": "msn-messenger-nostalgia",
   "version": "1.0.0",
-  "description": "### Saudades MSN Messenger",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tadeubarbosa/sdds-msn.git"
-  },
+  "description": "A (unofficial) project to old users.",
   "author": "Tadeu Barbosa <tadeufbarbosa@gmail.com>",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/tadeubarbosa/sdds-msn/issues"
   },
-  "homepage": "https://github.com/tadeubarbosa/sdds-msn#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-livereload": "^3.8.1",
-    "gulp-sass": "^3.1.0"
-  },
-  "dependencies": {
-    "vue": "^2.5.13"
-  }
+  "homepage": "https://github.com/tadeubarbosa/sdds-msn#readme"
 }
