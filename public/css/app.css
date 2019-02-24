@@ -1,0 +1,47 @@
+* { box-sizing: border-box; font-family: NotoSans, sans-serif; }
+
+html, body { min-height: 100%; margin: 0; }
+
+header, nav, section { display: block; }
+
+@font-face { font-family: "NotoSans"; src: url("fonts/NotoSans-Regular.ttf") format("truetype"); }
+
+@font-face { font-family: "NotoSans"; src: url("fonts/NotoSans-Bold.ttf") format("truetype"); font-weight: bold; }
+
+@font-face { font-family: "NotoSans"; src: url("fonts/NotoSans-Italic.ttf") format("truetype"); font-style: italic; }
+
+@font-face { font-family: "NotoSans"; src: url("fonts/NotoSans-BoldItalic.ttf") format("truetype"); font-weight: bold; font-style: italic; }
+
+body { background-repeat: no-repeat, repeat-x; background-size: 100%, 100%; background-image: url("../image/background-top-blue.jpg"), linear-gradient(to bottom, transparent 60%, #d2ebf5); }
+
+#welcome { width: 100%; padding: 20px; color: #355a88; }
+
+@media only screen and (min-width: 769px) { #welcome { width: 400px; margin: 50px auto; } }
+
+#welcome__container { margin: 20px 0; padding: 26px 10px; border: 1px solid #CCC; border-radius: 2px; font-size: 13px; }
+
+#welcome__container__user-image { width: 110px; height: 110px; margin: 0 auto; background-color: #FFF; background-size: cover; background-position: center; border-radius: 4px; border: 6px solid #cbdde0; }
+
+#welcome__container__user-welcome { margin: 5px 0 20px 0; font-size: 16px; text-align: center; }
+
+#welcome__container .welcome__container-inputs { padding: 6px; }
+
+#welcome__container .welcome__container-inputs label { font-weight: bold; color: #888; }
+
+#welcome__container .welcome__container-inputs input { width: 100%; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid rgba(0, 0, 0, 0.4); margin: 5px 0; border-radius: 2px; }
+
+#welcome__container__signin { padding: 10px; }
+
+#welcome__container__signin-status { margin: 0 5px; font-weight: bolder; text-transform: uppercase; }
+
+#welcome__container__signin-options { background: red; }
+
+#welcome__container__signin-options span { display: none; cursor: pointer; }
+
+#welcome__container-facebook { width: 150px; height: 30px; margin: 10px auto; cursor: pointer; background-image: url("../image/facebook.png"); background-size: contain; background-position: center; background-repeat: no-repeat; }
+
+#welcome-about { text-align: center; }
+
+#welcome-about h4 { margin: 0; }
+
+#welcome-about p { margin-top: 0; font-size: 12px; }
