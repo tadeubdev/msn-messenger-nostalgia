@@ -15,5 +15,8 @@
     "type": "git",
     "url": "git+https://github.com/tadeubarbosa/msn-messenger-nostalgia.git"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
 }
