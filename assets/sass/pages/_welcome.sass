@@ -1,83 +1,108 @@
 #welcome
-	width: 100%
-	padding: 20px
-	color: $primary-color
+    width: 100%
+    padding: 20px
+    color: #555555
 
-	@include device-lg
-		width: 400px
-		margin: 50px auto
+    @include device-lg
+        width: 40%
+        margin: 50px auto
 
-	&__container
-		margin: 20px 0
-		padding: 26px 10px
-		border: 1px solid #CCC
-		border-radius: 2px
-		font-size: 13px
+    &__container
+        margin: 20px 0
+        padding: 26px 10px
+        border: 1px solid #CCC
+        border-radius: 2px
+        font-size: 13px
 
-		&__user-image
-			width: 110px
-			height: 110px
-			margin: 0 auto
-			background-color: #FFF
-			background-size: cover
-			background-position: center
-			border-radius: 4px
-			border: 6px solid $default
+        @include device-lg
+            padding: 50px auto !important
 
-		&__user-welcome
-			margin: 5px 0 20px 0
-			font-size: 16px
-			text-align: center
+        &:after
+            content: ' '
+            display: block
+            clear: both
 
-		.welcome__container-inputs
-			padding: 6px
+        &-sign
+            margin: 5px 0 20px 0
+            padding-left: 20px
+            font-size: 20px
 
-			label
-				font-weight: bold
-				color: #888
+            @include device-md
+                padding: 0
+                text-align: center
 
-			input
-				width: 100%
-				height: 30px
-				line-height: 30px
-				padding: 0 10px
-				border: 1px solid rgba( black, .4 )
-				margin: 5px 0
-				border-radius: 2px
+        &__user
+            @include device-lg
+                width: 25%
+                float: left
 
-		&__signin
-			padding: 10px
-			
-			&-status
-				margin: 0 5px
-				font-weight: bolder
-				text-transform: uppercase
+            #image
+                width: 110px
+                height: 110px
+                margin: 0 auto
+                background-color: #FFF
+                background-size: cover
+                background-position: center
+                border-radius: 4px
+                border: 6px solid $online
 
-			&-options
-				background: red
-				span
-					display: none
-					cursor: pointer
+        &__inputs
+            @include device-lg
+                width: 75%
+                float: left
 
-				span:first-child
-					display:inline-block
+            .inputs
+                padding: 6px
 
-		&-facebook
-			width: 150px
-			height: 30px
-			margin: 10px auto
-			cursor: pointer
-			background-image: url('../image/facebook.png')
-			background-size: contain
-			background-position: center
-			background-repeat: no-repeat
+                input
+                    width: 100%
+                    height: 30px
+                    line-height: 30px
+                    padding: 0 10px
+                    border: 1px solid rgba( black, .2 )
+                    margin: 5px 0
+                    border-radius: 2px
 
-	&-about
-		text-align: center
+            #forgot
+                margin: 0 0 10px 10px
+                a
+                    color: #46a6cc !important
+                    text-decoration: none
 
-		h4
-			margin: 0
+            #status
+                padding: 10px
+                cursor: not-allowed
 
-		p
-			margin-top: 0
-			font-size: 12px
+            #status-color
+                width: 10px
+                height: 10px
+                content: ' '
+                display: inline-block
+                border-radius: 2px
+                margin: 0 0 -1px 5px
+                background: #82fb82
+                box-shadow: 1px 1px 5px rgba(0,0,0,.2)
+                border: 1px solid rgba(0,0,0,.1)
+
+            #status-box
+                margin: 0 5px
+
+        &-facebook
+            width: 150px
+            height: 30px
+            margin: 10px auto
+            cursor: pointer
+            background-image: url('../image/facebook.png')
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+
+    &-about
+        text-align: center
+
+        h4
+            margin: 0
+
+        p
+            margin-top: 0
+            font-size: 12px
