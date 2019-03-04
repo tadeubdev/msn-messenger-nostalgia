@@ -3,6 +3,10 @@
     padding: 20px
     color: #555555
 
+    a
+        color: #0ba2de !important
+        text-decoration: none
+
     @include device-lg
         width: 40%
         margin: 50px auto
@@ -26,6 +30,11 @@
             margin: 5px 0 20px 0
             padding-left: 20px
             font-size: 20px
+
+            span
+                font-size: 80%
+                color: #888888
+                font-style: italic
 
             @include device-md
                 padding: 0
@@ -65,9 +74,6 @@
 
             #forgot
                 margin-left: 10px
-                a
-                    color: #46a6cc !important
-                    text-decoration: none
 
             #status
                 padding: 10px
@@ -93,6 +99,11 @@
 
                 #option-automatically
                     color: #cccccc !important
+
+            #buttons
+                button
+                    margin: 20px 5px 5px 5px
+                    cursor: pointer
 
         &-facebook
             width: 150px

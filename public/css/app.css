@@ -16,6 +16,8 @@ body { background-repeat: no-repeat, repeat-x; background-size: 100%, 100%; back
 
 #welcome { width: 100%; padding: 20px; color: #555555; }
 
+#welcome a { color: #0ba2de !important; text-decoration: none; }
+
 @media only screen and (min-width: 769px) { #welcome { width: 40%; margin: 50px auto; } }
 
 #welcome__container { margin: 20px 0; padding: 26px 10px; border: 1px solid #CCC; border-radius: 2px; font-size: 13px; }
@@ -25,6 +27,8 @@ body { background-repeat: no-repeat, repeat-x; background-size: 100%, 100%; back
 #welcome__container:after { content: ' '; display: block; clear: both; }
 
 #welcome__container-sign { margin: 5px 0 20px 0; padding-left: 20px; font-size: 20px; }
+
+#welcome__container-sign span { font-size: 80%; color: #888888; font-style: italic; }
 
 @media only screen and (max-width: 768px) { #welcome__container-sign { padding: 0; text-align: center; } }
 
@@ -40,8 +44,6 @@ body { background-repeat: no-repeat, repeat-x; background-size: 100%, 100%; back
 
 #welcome__container__inputs #forgot { margin-left: 10px; }
 
-#welcome__container__inputs #forgot a { color: #46a6cc !important; text-decoration: none; }
-
 #welcome__container__inputs #status { padding: 10px; cursor: not-allowed; color: #999 !important; }
 
 #welcome__container__inputs #status-color { width: 10px; height: 10px; content: ' '; display: inline-block; border-radius: 2px; margin: 0 0 -1px 5px; background: #82fb82; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); border: 1px solid rgba(0, 0, 0, 0.1); }
@@ -51,6 +53,8 @@ body { background-repeat: no-repeat, repeat-x; background-size: 100%, 100%; back
 #welcome__container__inputs #options { margin-left: 5px; }
 
 #welcome__container__inputs #options #option-automatically { color: #cccccc !important; }
+
+#welcome__container__inputs #buttons button { margin: 20px 5px 5px 5px; cursor: pointer; }
 
 #welcome__container-facebook { width: 150px; height: 30px; margin: 10px auto; cursor: pointer; background-image: url("../image/facebook.png"); background-size: contain; background-position: center; background-repeat: no-repeat; }
 
