@@ -27,11 +27,11 @@
 				<div id="welcome__container__inputs">
 
 					<div class="inputs">
-						<input type="text" name="username" placeholder="Seu nome"/>
+						<input type="text" name="username" id="email" placeholder="Seu nome"/>
 					</div>
 
 					<div class="inputs">
-						<input type="email" name="email" placeholder="Seu email"/>
+						<input type="email" name="email" id="email" placeholder="Seu email" onchange="generateImage(this.value)"/>
                     </div>
 
 					<div class="inputs">
@@ -79,6 +79,24 @@
 
 		</div>
     </div>
+
+    <script src="public/js/md5.min.js"></script>
+    <script>
+        window.onload = () => {
+            let email = document.getElementById('email')
+            getGravatar = (email, size) => {
+                var size = size || 80;
+                email = email.toLowerCase().toString()
+                return 'http://www.gravatar.com/avatar/' + md5(email) + '.jpg?s=' + size + '&d=' + encodeURIComponent('https://i.imgur.com/KSV2mQ7.png')
+            }
+            generateImage = value => {
+                if(value.length<4) return
+                document.getElementById('image').style.backgroundImage = 'url("'+getGravatar(value)+'")'
+                console.log('url("' + getGravatar(value) + '")')
+            }
+            generateImage(email.value)
+        }
+    </script>
 
 </body>
 </html>
