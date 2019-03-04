@@ -18,7 +18,7 @@ body { background-repeat: no-repeat, repeat-x; background-size: 100%, 100%; back
 
 #welcome a { color: #0ba2de !important; text-decoration: none; }
 
-@media only screen and (min-width: 769px) { #welcome { width: 40%; margin: 50px auto; } }
+@media only screen and (min-width: 769px) { #welcome { width: 40%; margin: 50px auto 0 auto; } }
 
 #welcome__container { margin: 20px 0; padding: 26px 10px; border: 1px solid #CCC; border-radius: 2px; font-size: 13px; }
 
