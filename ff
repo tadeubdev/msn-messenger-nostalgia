@@ -1,0 +1,53 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 7dd2533..60618cf 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -13,7 +13,7 @@[m
+ [m
+ 		<div class="content">[m
+ [m
+[31m-			<div id="welcome__container">[m
+[32m+[m			[32m<form id="welcome__container">[m
+ [m
+ 				<div id="welcome__container-sign">[m
+ 					Entrar no <br>[m
+[36m@@ -65,13 +65,13 @@[m
+                     </div>[m
+ [m
+                     <div id="buttons">[m
+[31m-                        <button id="entrar" onclick="btnEntrar()">Entrar</button>[m
+[31m-                        <button id="cancelar" onclick="btnClear()">Cancelar</button>[m
+[32m+[m[32m                        <button id="entrar" onclick="btnEnter(event)">Entrar</button>[m
+[32m+[m[32m                        <button id="cancelar" onclick="btnClear(event)">Cancelar</button>[m
+                     </div>[m
+ [m
+                 </div>[m
+ [m
+[31m-			</div>[m
+[32m+[m			[32m</form>[m
+ [m
+ 			<div id="welcome-about">[m
+ 				<h4>IMPORTANTE!</h4>[m
+[36m@@ -100,15 +100,20 @@[m
+                 return 'http://www.gravatar.com/avatar/' + md5(email) + '.jpg?s=' + size + '&d=' + encodeURIComponent('https://i.imgur.com/KSV2mQ7.png')[m
+             }[m
+             generateImage = value => {[m
+[31m-                let url = location.href + 'public/image/user.png'[m
+[32m+[m[32m                let url = location.origin + '/public/image/user.png'[m
+                 if(value && value.length>4) url = getGravatar(value)[m
+                 document.getElementById('image').style.backgroundImage = 'url("' + url + '")'[m
+             }[m
+[31m-            btnClear = () => {[m
+[32m+[m[32m            btnClear = (e) => {[m
+                 document.querySelectorAll('input').forEach((elm) => {[m
+                     elm.value = ''[m
+                 })[m
+                 generateImage()[m
+[32m+[m[32m                e.preventDefault()[m
+[32m+[m[32m            }[m
+[32m+[m[32m            btnEnter = (e) => {[m
+[32m+[m[32m                alert("Esta opção ainda não está disponível!")[m
+[32m+[m[32m                e.preventDefault()[m
+             }[m
+             //[m
+             generateImage(email.value)[m
