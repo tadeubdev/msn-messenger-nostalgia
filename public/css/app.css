@@ -36,17 +36,21 @@ body { background-repeat: no-repeat, repeat-x; background-size: 100%, 100%; back
 
 #welcome__container__inputs .inputs { padding: 6px; }
 
-#welcome__container__inputs .inputs input { width: 100%; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid rgba(0, 0, 0, 0.2); margin: 5px 0; border-radius: 2px; }
+#welcome__container__inputs .inputs input { width: 80%; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid rgba(0, 0, 0, 0.2); margin: 5px 0; border-radius: 2px; }
 
-#welcome__container__inputs #forgot { margin: 0 0 10px 10px; }
+#welcome__container__inputs #forgot { margin-left: 10px; }
 
 #welcome__container__inputs #forgot a { color: #46a6cc !important; text-decoration: none; }
 
-#welcome__container__inputs #status { padding: 10px; cursor: not-allowed; }
+#welcome__container__inputs #status { padding: 10px; cursor: not-allowed; color: #999 !important; }
 
 #welcome__container__inputs #status-color { width: 10px; height: 10px; content: ' '; display: inline-block; border-radius: 2px; margin: 0 0 -1px 5px; background: #82fb82; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); border: 1px solid rgba(0, 0, 0, 0.1); }
 
 #welcome__container__inputs #status-box { margin: 0 5px; }
+
+#welcome__container__inputs #options { margin-left: 5px; }
+
+#welcome__container__inputs #options #option-automatically { color: #cccccc !important; }
 
 #welcome__container-facebook { width: 150px; height: 30px; margin: 10px auto; cursor: pointer; background-image: url("../image/facebook.png"); background-size: contain; background-position: center; background-repeat: no-repeat; }
 

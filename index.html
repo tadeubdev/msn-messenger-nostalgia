@@ -27,11 +27,15 @@
 				<div id="welcome__container__inputs">
 
 					<div class="inputs">
-						<input type="email" name="email" placeholder="seuemail@email.com"/>
+						<input type="text" name="username" placeholder="Seu nome"/>
 					</div>
 
 					<div class="inputs">
-						<input type="password" name="password" placeholder="Sua senha"/>
+						<input type="email" name="email" placeholder="Seu email"/>
+                    </div>
+
+					<div class="inputs">
+						<input type="password" name="password" placeholder="Sua senha" disabled="disabled"/>
                     </div>
 
                     <div id="forgot">
@@ -42,6 +46,17 @@
                         <span>Entrar como:</span>
                         <span id="status-color"></span>
                         <span id="status-box">Disponível ▼</span>
+                    </div>
+
+                    <div id="options">
+                        <div class="option">
+                            <input type="checkbox" name="remember" id="remember">
+                            Lembrar minha ID e senha
+                        </div>
+                        <div class="option" id="option-automatically">
+                            <input type="checkbox" name="automatically" id="automatically" disabled="disabled">
+                            Entrar automaticamente
+                        </div>
                     </div>
 
                 </div>
@@ -63,7 +78,7 @@
 			</div>
 
 		</div>
-	</div>
+    </div>
 
 </body>
 </html>

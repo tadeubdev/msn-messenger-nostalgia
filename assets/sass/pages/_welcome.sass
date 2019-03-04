@@ -55,7 +55,7 @@
                 padding: 6px
 
                 input
-                    width: 100%
+                    width: 80%
                     height: 30px
                     line-height: 30px
                     padding: 0 10px
@@ -64,7 +64,7 @@
                     border-radius: 2px
 
             #forgot
-                margin: 0 0 10px 10px
+                margin-left: 10px
                 a
                     color: #46a6cc !important
                     text-decoration: none
@@ -72,20 +72,27 @@
             #status
                 padding: 10px
                 cursor: not-allowed
+                color: #999 !important
 
-            #status-color
-                width: 10px
-                height: 10px
-                content: ' '
-                display: inline-block
-                border-radius: 2px
-                margin: 0 0 -1px 5px
-                background: #82fb82
-                box-shadow: 1px 1px 5px rgba(0,0,0,.2)
-                border: 1px solid rgba(0,0,0,.1)
+                &-color
+                    width: 10px
+                    height: 10px
+                    content: ' '
+                    display: inline-block
+                    border-radius: 2px
+                    margin: 0 0 -1px 5px
+                    background: #82fb82
+                    box-shadow: 1px 1px 5px rgba(0,0,0,.2)
+                    border: 1px solid rgba(0,0,0,.1)
 
-            #status-box
-                margin: 0 5px
+                &-box
+                    margin: 0 5px
+
+            #options
+                margin-left: 5px
+
+                #option-automatically
+                    color: #cccccc !important
 
         &-facebook
             width: 150px
