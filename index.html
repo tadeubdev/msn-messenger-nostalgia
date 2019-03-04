@@ -13,7 +13,7 @@
 
 		<div class="content">
 
-			<div id="welcome__container">
+			<form id="welcome__container">
 
 				<div id="welcome__container-sign">
 					Entrar no <br>
@@ -65,13 +65,13 @@
                     </div>
 
                     <div id="buttons">
-                        <button id="entrar" onclick="btnEntrar()">Entrar</button>
-                        <button id="cancelar" onclick="btnClear()">Cancelar</button>
+                        <button id="entrar" onclick="btnEnter(event)">Entrar</button>
+                        <button id="cancelar" onclick="btnClear(event)">Cancelar</button>
                     </div>
 
                 </div>
 
-			</div>
+			</form>
 
 			<div id="welcome-about">
 				<h4>IMPORTANTE!</h4>
@@ -100,15 +100,20 @@
                 return 'http://www.gravatar.com/avatar/' + md5(email) + '.jpg?s=' + size + '&d=' + encodeURIComponent('https://i.imgur.com/KSV2mQ7.png')
             }
             generateImage = value => {
-                let url = location.href + 'public/image/user.png'
+                let url = location.origin + '/public/image/user.png'
                 if(value && value.length>4) url = getGravatar(value)
                 document.getElementById('image').style.backgroundImage = 'url("' + url + '")'
             }
-            btnClear = () => {
+            btnClear = (e) => {
                 document.querySelectorAll('input').forEach((elm) => {
                     elm.value = ''
                 })
                 generateImage()
+                e.preventDefault()
+            }
+            btnEnter = (e) => {
+                alert("Esta opção ainda não está disponível!")
+                e.preventDefault()
             }
             //
             generateImage(email.value)
