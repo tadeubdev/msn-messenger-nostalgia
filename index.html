@@ -100,7 +100,7 @@
                 return 'http://www.gravatar.com/avatar/' + md5(email) + '.jpg?s=' + size + '&d=' + encodeURIComponent('https://i.imgur.com/KSV2mQ7.png')
             }
             generateImage = value => {
-                let url = location.origin + '/public/image/user.png'
+                let url = location.href + 'public/image/user.png'
                 if(value && value.length>4) url = getGravatar(value)
                 document.getElementById('image').style.backgroundImage = 'url("' + url + '")'
             }
