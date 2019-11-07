@@ -1,23 +1,15 @@
 {
   "name": "msn-messenger-nostalgia",
   "version": "2.0.0",
-  "description": "A (unofficial) project to old users.",
+  "description": "Um projeto não oficial de um antigo usuário do MSN Messenger",
   "author": "Tadeu Barbosa <tadeufbarbosa@gmail.com>",
   "bugs": {
     "url": "https://github.com/tadeubarbosa/sdds-msn/issues"
   },
   "homepage": "https://github.com/tadeubarbosa/sdds-msn#readme",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tadeubarbosa/msn-messenger-nostalgia.git"
   },
-  "license": "ISC",
-  "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2"
-  }
+  "license": "ISC"
 }
