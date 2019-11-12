@@ -1,21 +1,21 @@
-## MSN Messenger Nostalgia
-### An unofficial project to old MSN &copy; Messenger user.
+# msn-messenger-nostalgia
 
-If you has nostalgia of MSN Messenger like me, this small application was made for you.
+> Um projeto não oficial para um antigo usuário do MSN Messenger.
 
-<br>
+## Build Setup
 
-> ATTENTION! <br>
-> This one is not an official application by <a href="https://msn.com" target="_blank">MSN &copy;</a>. <br>
-> This is a simple and uncommercial application for old users.
+``` bash
+# install dependencies
+npm install
 
-<br>
-<br>
+# serve with hot reload at localhost:8080
+npm run dev
 
----
+# build for production with minification
+npm run build
 
-### UNDER CONSTRUCTION
+# build for production and view the bundle analyzer report
+npm run build --report
+```
 
-You can made anything for this project? Help us!
-
-Clone and send a `pull request`!  :wink: 
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

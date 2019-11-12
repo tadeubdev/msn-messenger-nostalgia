@@ -1,125 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title> MSN Messenger Nostalgia </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#0ba2de">
-	<link rel="stylesheet" type="text/css" href="public/css/app.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>MSN Messenger Nostalgia</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/vue-material.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/theme/default.css">
 </head>
 <body>
-
-	<div id="welcome" class="container">
-
-		<div class="content">
-
-			<form id="welcome__container">
-
-				<div id="welcome__container-sign">
-					Entrar no <br>
-                    Windows Live <strong>Messenger</strong> <br>
-                    <span>
-                        um aplicativo não oficial
-                        <a href="https://github.com/tadeubarbosa/msn-messenger-nostalgia" target="_blank">(leia mais)</a>
-                    </span>
-				</div>
-
-				<div id="welcome__container__user">
-					<div id="image" style="background-image:url('public/image/user.png');"></div>
-				</div>
-
-				<div id="welcome__container__inputs">
-
-					<div class="inputs">
-						<input type="text" name="username" id="username" placeholder="Seu nome"/>
-					</div>
-
-					<div class="inputs">
-						<input type="email" name="email" id="email" placeholder="Seu email" onchange="generateImage(this.value)"/>
-                    </div>
-
-					<div class="inputs">
-						<input type="password" name="password" placeholder="Sua senha" disabled="disabled"/>
-                    </div>
-
-                    <div id="forgot">
-                        <a href="https://github.com/tadeubarbosa/msn-messenger-nostalgia" target="_blank">Esqueceu sua senha?</a>
-                    </div>
-
-                    <div id="status">
-                        <span>Entrar como:</span>
-                        <span id="status-color"></span>
-                        <span id="status-box">Disponível ▼</span>
-                    </div>
-
-                    <div id="options">
-                        <div class="option">
-                            <input type="checkbox" name="remember" id="remember">
-                            <label for="remember">Lembrar minha ID e senha</label>
-                        </div>
-                        <div class="option" id="option-automatically">
-                            <input type="checkbox" name="automatically" id="automatically" disabled="disabled">
-                            Entrar automaticamente
-                            <a href="javascript:void(0)">&nbsp; Opções</a>
-                        </div>
-                    </div>
-
-                    <div id="buttons">
-                        <button id="entrar" onclick="btnEnter(event)">Entrar</button>
-                        <button id="cancelar" onclick="btnClear(event)">Cancelar</button>
-                    </div>
-
-                </div>
-
-			</form>
-
-			<div id="welcome-about">
-				<h4>IMPORTANTE!</h4>
-				<p>
-					Este <b>não é</b> um projeto oficial da <a href="https://msn.com" target="_blank">MSN &copy;</a>.
-					É um simples projeto para matar a saudade do <i>MSN Messenger &copy;</i>,
-					com seu código fonte disponibilizado em <a href="https://github.com/tadeubarbosa/msn-messenger-nostalgia" target="_blank">github/tadeubarbosa/msn-messenger-nostalgia</a>
-				</p>
-				<p>
-					<em>
-						created by <a href="http://github.com/tadeubarbosa" target="_blank">Tadeu Barbosa</a>
-					</em>
-				</p>
-			</div>
-
-		</div>
-    </div>
-
-    <script src="public/js/md5.min.js"></script>
-    <script>
-        window.onload = () => {
-            let email = document.getElementById('email')
-            getGravatar = (email, size) => {
-                var size = size || 80;
-                email = email.toLowerCase().toString()
-                return 'http://www.gravatar.com/avatar/' + md5(email) + '.jpg?s=' + size + '&d=' + encodeURIComponent('https://i.imgur.com/KSV2mQ7.png')
-            }
-            generateImage = value => {
-                let url = location.href + 'public/image/user.png'
-                if(value && value.length>4) url = getGravatar(value)
-                document.getElementById('image').style.backgroundImage = 'url("' + url + '")'
-            }
-            btnClear = (e) => {
-                document.querySelectorAll('input').forEach((elm) => {
-                    elm.value = ''
-                })
-                generateImage()
-                e.preventDefault()
-            }
-            btnEnter = (e) => {
-                alert("Esta opção ainda não está disponível!")
-                e.preventDefault()
-            }
-            //
-            generateImage(email.value)
-        }
-    </script>
-
+  <div id="app" v-md-theme="'default'">
+  <!-- built files will be auto injected -->
 </body>
 </html>
