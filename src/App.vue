@@ -20,10 +20,7 @@
   min-height: 100vh;
   margin: auto;
   padding: 15px;
-  background-image: url('/static/image/background-top-blue.jpg');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: 300%;
+
   font-family: NotoSans, sans-serif;
   color: #555555;
 }
