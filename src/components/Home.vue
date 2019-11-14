@@ -14,15 +14,15 @@
         </div>
         <form v-on:submit.prevent id="profile-form">
           <div class="profile-form-group">
-            <input type="text" class="profile-form-input" placeholder="email@email.com" v-model="email" ref="email" />
+            <input type="email" class="profile-form-input" placeholder="email@email.com" required v-model="email" ref="email" />
           </div>
           <div class="profile-form-group">
-            <input type="password" class="profile-form-input" placeholder="********" v-model="password" ref="password" />
+            <input type="password" class="profile-form-input" placeholder="********" required v-model="password" ref="password" />
           </div>
           <a href="javascript:void(0)" class="profile-form-link">Esqueci minha senha</a>
           <div id="profile-form-buttons">
-            <button class="profile-form-button">Entrar</button>
-            <button class="profile-form-button">Cancelar</button>
+            <button class="profile-form-button" v-on:click="doLogin()">Entrar</button>
+            <button class="profile-form-button" v-on:click="cancelLogin()">Cancelar</button>
           </div>
         </form>
       </section>
@@ -92,6 +92,24 @@
   border-radius: 2px;
 }
 
+#profile-form-buttons {
+  margin-top: 10px;
+}
+
+.profile-form-button {
+  margin: 10px;
+  margin-left: 0;
+  padding: 4px 13px;
+  cursor: pointer;
+}
+
+#profile-form-link {
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  color: #0ba2de !important;
+}
+
 @media screen and (min-width: 761px) {
   #container {
     width: 400px;
@@ -116,18 +134,6 @@
     padding-top: 10px;
   }
 }
-
-.profile-form-button {
-  margin: 15px auto;
-  display: block;
-}
-
-#profile-form-link {
-  display: block;
-  font-size: 12px;
-  text-decoration: none;
-  color: #0ba2de !important;
-}
 </style>
 
 <script>
@@ -137,9 +143,26 @@ export default {
 
   data() {
     return {
-      email: null,
-      password: null,
+      email: '',
+      password: '',
+      regexEmail: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/,
     }
+  },
+
+  methods: {
+
+    doLogin() {
+      if(!this.email.length || !this.regexEmail.test(this.email)) {
+        console.log('Insira um email válido!');
+        return;
+      }
+    },
+
+    cancelLogin() {
+      this.email    = '';
+      this.password = '';
+    },
+
   }
 
 }
