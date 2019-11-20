@@ -43,7 +43,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../docs'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: 'msn-messenger-nostalgia/',
+    assetsPublicPath: '',
 
     /**
      * Source Maps
